@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>ar.noxit</groupId>
+    <artifactId>maven-repo</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>Noxit Repository</name>
+    <modules>
+        <module>dataaccessobject</module>
+        <module>exceptions</module>
+        <module>jpa-dao</module>
+        <module>utils</module>
+        <module>wicket-utils</module>
+        <module>guicewarp-dao</module>
+        <module>hibernate-translator-dao</module>
+        <module>translator-dao</module>
+        <module>rmi-process</module>
+        <module>hasher</module>
+        <module>wiquery-utils</module>
+    </modules>
+	<repositories>
+	    <repository>
+	        <id>jboss</id>
+	        <url>http://repository.jboss.com/maven2</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	        <snapshots>
+	            <enabled>false</enabled>
+	        </snapshots>
+	    </repository>
+	</repositories>
+	<pluginRepositories>
+	    <pluginRepository>
+	        <id>jboss-plugins</id>
+	        <url>http://repository.jboss.com/maven2</url>
+	        <releases>
+	            <enabled>true</enabled>
+	        </releases>
+	        <snapshots>
+	            <enabled>false</enabled>
+	        </snapshots>
+	    </pluginRepository>
+	</pluginRepositories>
+	<distributionManagement>
+		<snapshotRepository>
+			<id>noxit-maven-repo</id>
+			<name>NoxIT Maven Repo</name>
+			<url>file://${noxit.maven.repo.path}</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

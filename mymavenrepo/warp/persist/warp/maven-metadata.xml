@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>warp.persist</groupId>
+  <artifactId>warp</artifactId>
+  <version>1.0.1</version>
+  <versioning>
+    <versions>
+      <version>1.0.1</version>
+    </versions>
+    <lastUpdated>20100430204012</lastUpdated>
+  </versioning>
+</metadata>
